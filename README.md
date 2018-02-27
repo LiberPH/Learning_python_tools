@@ -77,7 +77,7 @@ test_sysexit.py:6:1: E302 expected 2 blank lines, found 1
 
 # cookiecutter
 
-*Creates a Python package project from a Python package template O.o
+* Creates a Python package project from a Python package template O.o
 
 
 #### Sources 
