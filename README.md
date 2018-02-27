@@ -5,7 +5,12 @@ Crash research of useful python tools and their comparison with others
  * In contrast to unittest, it proposes the use of tests as plain python functions, instead if using large test classes.
  * Makes it easy to write small tests
  * Simply by calling 'pytest', it will search and run all files of the form test_*.py or *_test.py in the current directory and its subdirectories.
- * Still, you can make your testing classes with pytest XD. 
+ * pytest can be run through the pyton interpeter, there the tests to be run or the directory  where we want to explore them
+ can be established. also, we can choose tests by expressions:
+ ```
+ pytest -k "MyClass and not method"
+ ```
+ * Still, you can make your testing classes with pytest XD and see intermediate values to find the failures. 
 ```pyhton
  # content of test_class.py
 class TestClass(object):
