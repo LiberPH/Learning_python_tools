@@ -84,3 +84,18 @@ test_sysexit.py:6:1: E302 expected 2 blank lines, found 1
 #### Sources 
 * https://github.com/audreyr/cookiecutter
 * http://cookiecutter.readthedocs.io/en/latest/first_steps.html
+
+---
+# tox
+
+ Is a tool to pack and test python projects.
+ A tox.ini file must be created in the same path as setup.py
+ It seems it doesn't make .jar files O.o
+
+#### Sources
+* https://tox.readthedocs.io/en/latest/
+* To avoid a setup.py https://www.codesd.com/item/how-do-i-run-tox-in-a-project-that-does-not-have-setup-py.html
+
+---
+
+# behave
