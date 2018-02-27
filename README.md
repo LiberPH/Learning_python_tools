@@ -1,6 +1,6 @@
 # Learning_python_tools
 Crash research of useful python tools and their comparison with others
-
+---
 # pytest
  * In contrast to unittest, it proposes the use of tests as plain python functions, instead if using large test classes.
  * Makes it easy to write small tests
@@ -29,7 +29,7 @@ class TestClass(object):
 * https://docs.pytest.org/en/latest/getting-started.html#install-pytest
 #### Conventions for Python test discovery and good integration practices:
 * https://docs.pytest.org/en/latest/goodpractices.html#test-discovery
-
+---
 # coverage
 
 Coverageis typically used to assess the effectiveness of tests. It can show which parts of your code are being exercised by tests, and which are not.
@@ -55,7 +55,7 @@ with **--omit**, the chosen paths can be omitted from the coberture report (for 
 
 ### Sources
 * https://coverage.readthedocs.io/en/coverage-4.5.1/
-
+---
 # flake8
 * Is a modular source code checker
 * It is a linter tool that helps to prevent bugs in your program.
@@ -73,6 +73,12 @@ test_sysexit.py:6:1: E302 expected 2 blank lines, found 1
 ### Sources
 * https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2
 * http://flake8.pycqa.org/en/latest/
+---
+
+# cookiecutter
+
+*Creates a Python package project from a Python package template O.o
 
 
-
+#### Sources 
+* https://github.com/audreyr/cookiecutter
