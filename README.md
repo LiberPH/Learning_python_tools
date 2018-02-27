@@ -30,7 +30,7 @@ class TestClass(object):
 #### Conventions for Python test discovery and good integration practices:
 * https://docs.pytest.org/en/latest/goodpractices.html#test-discovery
 
-# Coverage
+# coverage
 
 Coverageis typically used to assess the effectiveness of tests. It can show which parts of your code are being exercised by tests, and which are not.
 To run the previously created examples in pytest I used:
@@ -55,4 +55,11 @@ with **--omit**, the chosen paths can be omitted from the coberture report (for 
 
 ### Sources
 * https://coverage.readthedocs.io/en/coverage-4.5.1/
+
+# flake8
+Is a modular source code checker
+Flake8 is a wrapper around these tools:
+* PyFlakes
+* pycodestyle
+* Ned Batchelder’s McCabe script
 
