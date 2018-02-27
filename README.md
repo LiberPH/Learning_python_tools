@@ -78,7 +78,9 @@ test_sysexit.py:6:1: E302 expected 2 blank lines, found 1
 # cookiecutter
 
 * Creates a Python package project from a Python package template O.o
-
+* Es tricky de usar
+* ¿Vale la pena usarlo si no necesariamente todos nuestros proyectos se van a justar a un template?
 
 #### Sources 
 * https://github.com/audreyr/cookiecutter
+* http://cookiecutter.readthedocs.io/en/latest/first_steps.html
