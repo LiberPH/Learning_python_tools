@@ -57,9 +57,22 @@ with **--omit**, the chosen paths can be omitted from the coberture report (for 
 * https://coverage.readthedocs.io/en/coverage-4.5.1/
 
 # flake8
-Is a modular source code checker
-Flake8 is a wrapper around these tools:
-* PyFlakes
-* pycodestyle
-* Ned Batchelder’s McCabe script
+* Is a modular source code checker
+* It is a linter tool that helps to prevent bugs in your program.
+* It is known as “the wrapper which verifies pep8, pyflakes and circular complexity “. It has low rate of false positives.
+* Flake8 is a wrapper around these tools:
+- PyFlakes
+-  pycodestyle
+-  Ned Batchelder’s McCabe script
+* Example:
+```python
+ flake8 test_sysexit.py 
+test_sysexit.py:3:1: E302 expected 2 blank lines, found 0
+test_sysexit.py:6:1: E302 expected 2 blank lines, found 1
+```
+### Sources
+* https://medium.com/python-pandemonium/what-is-flake8-and-why-we-should-use-it-b89bd78073f2
+* http://flake8.pycqa.org/en/latest/
+
+
 
