@@ -29,3 +29,30 @@ class TestClass(object):
 * https://docs.pytest.org/en/latest/getting-started.html#install-pytest
 #### Conventions for Python test discovery and good integration practices:
 * https://docs.pytest.org/en/latest/goodpractices.html#test-discovery
+
+# Coverage
+
+Coverageis typically used to assess the effectiveness of tests. It can show which parts of your code are being exercised by tests, and which are not.
+To run the previously created examples in pytest I used:
+```
+python2.7 -m coverage run --source=./ -m pytest 
+```
+And to run its report:
+```
+ python2.7 -m coverage report
+```
+Which resulted in:
+```
+Name              Stmts   Miss  Cover
+-------------------------------------
+test_class.py         7      0   100%
+test_sysexit.py       6      0   100%
+-------------------------------------
+TOTAL                13      0   100%
+
+```
+with **--omit**, the chosen paths can be omitted from the coberture report (for example the coberture of the tests themselves maybe useless, we want the coberture of their underlying classes and functions.
+
+### Sources
+* https://coverage.readthedocs.io/en/coverage-4.5.1/
+
