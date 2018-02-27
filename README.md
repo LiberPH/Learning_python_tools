@@ -99,3 +99,9 @@ test_sysexit.py:6:1: E302 expected 2 blank lines, found 1
 ---
 
 # behave
+* Objective: Use behaviour driven development to encourage collaboration between developers, QA, etc...
+* Behavior testing simply means that we should test how an application behaves in certain situations. Often the behavior is given to us developers by our customers. They describe the functionality of an application, and we write code to meet their specifications. Behavioral tests are a tool to formalize their requirements into tests. This leads naturally to behavior-driven development (BDD).
+* Behave uses tests written in a natural language style, backed up by Python code.
+#### Sources
+* https://github.com/behave/behave
+* https://semaphoreci.com/community/tutorials/getting-started-with-behavior-testing-in-python-with-behave
