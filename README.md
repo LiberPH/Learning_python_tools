@@ -140,6 +140,28 @@ basepython = python2.7
  ```
  ### setup.py
  
+ Contains the main data of the things that are being run in the tox environment. it includes the packages being run.
+ ```
+ from distutils.core import setup
+
+setup(name='Inversiones',
+      version='0.1',
+      description='AnalyticBaseTable',
+      author='Datio: Libertad',
+      author_email='lpantoja@datoibd.com',
+      url='http://www.datio.com',
+      packages=['src','test']
+     )
+ ```
+ ### .coveragerc
+ 
+ Contains the coverage parameters and modifications required, for example any omits that may be needed.
+ 
+ ```
+ [run]
+omit = */*__init__.py
+```
+
 #### Sources
 * https://tox.readthedocs.io/en/latest/
 
