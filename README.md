@@ -89,11 +89,60 @@ test_sysexit.py:6:1: E302 expected 2 blank lines, found 1
 # tox
 
  Is a tool to pack and test python projects.
- A tox.ini file must be created in the same path as setup.py
- It seems it doesn't make .jar files O.o
+ tox runs a virtual environment :D.
+ 
+ ## Requirements
+ A tox.ini file must be created in the same path as a setup.py
+ 
+ ### tox.ini
+ The tox.ini file contains:
+ * The python environment to be used 
+```
+[tox]
+envlist = py27
+``` 
+ * The dependecies and commands to run in the environment.
+ ```
+ [testenv]
+deps =
+	coverage
+	pytest-cov
+	pytest
+	pyspark
+	numpy
+	pandas
+commands =
 
+    py.test --cov-config .coveragerc --cov-report html --cov-report term-missing --cov=src test/ 
+
+ ```
+ Whole tox.ini example:
+ ```
+ [tox]
+envlist = py27
+
+[testenv]
+deps =
+	coverage
+	pytest-cov
+	pytest
+	pyspark
+	numpy
+	pandas
+commands =
+
+    py.test --cov-config .coveragerc --cov-report html --cov-report term-missing --cov=src test/ 
+
+
+[testenv:py27]
+basepython = python2.7
+
+ ```
+ ### setup.py
+ 
 #### Sources
 * https://tox.readthedocs.io/en/latest/
+
 * To avoid a setup.py https://www.codesd.com/item/how-do-i-run-tox-in-a-project-that-does-not-have-setup-py.html
 
 ---
